@@ -1,0 +1,62 @@
+.container {
+  width: 80%;
+  text-align: left;
+  margin-left: 10%;
+}
+.event-container {
+  margin-bottom: 100px;
+  display: inline-block;
+}
+.Events {
+  text-align: center;
+}
+.event-imgl {
+  height: auto;
+  width: 40%;
+  float: left;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  display: inline;
+  margin-right: 10%;
+}
+.event-imgr {
+  height: auto;
+  width: 40%;
+  float: right;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  display: inline;
+  margin-right: 10%;
+}
+.info-container {
+  height: auto;
+  width: 40%;
+  display: inline;
+}
+.event-name {
+  text-align: left;
+  margin-top: 0;
+}
+.info-container p {
+  width: 100%;
+}
+
+@media (max-width: 700px) {
+  .event-name {
+    text-align: center;
+  }
+  .event-imgl {
+    float: none;
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+  .event-imgr {
+    width: 100%;
+    height: auto;
+    float: none;
+    margin-bottom: 20px;
+  }
+}
