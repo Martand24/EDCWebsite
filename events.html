@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>navbar</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="navbar.css" rel="stylesheet">
+    <link href="events.css" rel="stylesheet">
+</head>
+
+<body>
+    <!--Navigation bar-->
+    <header>
+        <div class="logo-div">
+            <img src="logo.png" alt="logo" class="logo">
+        </div>
+
+        <!--hamburger menu for mobile view-->
+        <div class="hamburger" onclick="toggleMenu()">
+            ≡
+        </div>
+
+        <nav>
+            <a href="#" onclick="hideNav()">Home</a>
+            <a href="#" onclick="hideNav()">Gallery</a>
+            <a href="#" onclick="hideNav()">Team</a>
+            <a href="login.html" onclick="hideNav()">Initiative</a>
+            <a href="#" onclick="hideNav()">About US</a>
+        </nav>
+    </header>
+
+    <div>
+        <h1 class="Events">EVENTS</h1>
+    </div>
+    <div class="container">
+        <div class="event-container">
+            <img src="ewoke_1.jpg" alt="esummit" class="event-imgl">
+            <div class="info-container">
+                <h3 class="event-name">ESUMMIT</h3>
+                <p>E - Summit is the flagship event of EDC, spanning 2-3 days of dynamic activities. Featuring keynote
+                    speakers, interactive games, a Shark Tank competition, and innovative idea presentations, it’s a
+                    premier platform for growth and networking. Don’t miss this opportunity to engage with industry
+                    leaders, showcase your ideas, and drive your ambitions forward in a vibrant, inspiring environment.
+                </p>
+            </div>
+        </div>
+        <div class="event-container">
+            <img src="ewoke_1.jpg" alt="esummit" class="event-imgr">
+            <div class="info-container">
+                <h3 class="event-name">EWOKE</h3>
+                <p>E-Woke is EDC’s orientation program designed for freshers. Experience a vibrant introduction to our
+                    community with engaging games, interactive sessions, and more. It’s the perfect opportunity to
+                    connect with peers, explore EDC’s offerings, and kickstart your journey with us. Join the fun and
+                    get ready for an exciting start!</p>
+            </div>
+        </div>
+        <div class="event-container">
+            <img src="ewoke_1.jpg" alt="esummit" class="event-imgl">
+            <div class="info-container">
+                <h3 class="event-name">DEEPOTSAV</h3>
+                <p>Deepotsav is our grand Diwali celebration, emphasizing prosperity and cultural heritage. Join us for
+                    a spectacular event filled with traditional festivities, illuminating lights, and joyful gatherings.
+                    It’s one of our most significant cultural celebrations, fostering community spirit and honoring the
+                    rich traditions of Diwali.</p>
+            </div>
+        </div>
+        <div class="event-container">
+            <img src="ewoke_1.jpg" alt="esummit" class="event-imgr">
+            <div class="info-container">
+                <h3 class="event-name">BUILD WITH US</h3>
+                <p>Join us for 'Build with US,' an exciting ideathon hosted by EDC! Collaborate with fellow innovators
+                    to develop groundbreaking solutions in our hackathon event. Showcase your skills, tackle real-world
+                    challenges, and turn your ideas into impactful projects. Don’t miss this opportunity to make a
+                    difference and connect with the community!</p>
+            </div>
+        </div>
+        <div class="event-container">
+            <img src="ewoke_1.jpg" alt="esummit" class="event-imgl">
+            <div class="info-container">
+                <h3 class="event-name">ECOFUSION</h3>
+                <p>EcoFusion, sponsored by Greenovation Club, champions green innovation and sustainability. This event
+                    supports startups focused on eco-friendly solutions, encouraging groundbreaking ideas
+                    that promote environmental stewardship. Join us to showcase your sustainable projects, network with
+                    like-minded entrepreneurs, and drive positive change for a greener future!</p>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        function toggleMenu() {
+            var x = document.querySelector("nav");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            }
+            else {
+                x.style.display = "block";
+            }
+            var y = document.querySelector(".hamburger");
+            if (y.textContent.trim() === "≡") {
+                y.textContent = "×";
+            }
+            else {
+                y.textContent = "≡";
+            }
+        }
+        function hideNav() {
+            if (window.matchMedia("(max-width:800px)").matches) {
+                toggleMenu();
+            }
+        }
+    </script>
+</body>
+
+</html>
